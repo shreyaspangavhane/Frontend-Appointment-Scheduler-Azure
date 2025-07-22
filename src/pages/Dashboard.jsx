@@ -15,12 +15,12 @@ const Dashboard = () => {
   const token = localStorage.getItem('token');
   const username = localStorage.getItem('username') || 'User';
 
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('username');
-    toast.success('Logged out successfully!');
-    window.location.href = '/login';
-  };
+  // const handleLogout = () => {
+  //   localStorage.removeItem('token');
+  //   localStorage.removeItem('username');
+  //   toast.success('Logged out successfully!');
+  //   window.location.href = '/login';
+  // };
 
   const fetchAppointments = useCallback(async () => {
     if (!token) {
@@ -108,9 +108,9 @@ const Dashboard = () => {
       <div style={{ maxWidth: '800px', margin: '40px auto', padding: '20px', border: '1px solid #ddd', borderRadius: '12px', backgroundColor: '#fdfdfd' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <h2>Welcome, {username} 👋</h2>
-          <button onClick={handleLogout} style={{ backgroundColor: '#dc3545', color: '#fff', border: 'none', padding: '6px 12px', borderRadius: '6px' }}>
+          {/* <button onClick={handleLogout} style={{ backgroundColor: '#dc3545', color: '#fff', border: 'none', padding: '6px 12px', borderRadius: '6px' }}>
             Logout
-          </button>
+          </button> */}
         </div>
         <hr />
 
