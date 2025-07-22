@@ -112,7 +112,7 @@ const Dashboard = () => {
             Logout
           </button> */}
         </div>
-        <hr />
+        <hr/>
 
         <h3 style={{ marginTop: '20px' }}>📅 Book Appointment</h3>
         <form onSubmit={handleBook} style={{ marginBottom: '20px' }}>
